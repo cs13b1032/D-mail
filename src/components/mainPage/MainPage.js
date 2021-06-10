@@ -53,33 +53,9 @@ export default function AlignItemsList(props) {
       place: "Klockwork Studios, Stockholm",
       time: "2021-06-09T09:30",
       icon: "music",
-      notification: "",
-    },
-    {
-      type: "PERSONAL",
-      name: "Record Techno mixtape",
-      place: "Klockwork Studios, Stockholm",
-      time: "2021-06-09T20:30",
-      icon: "music",
-      notification: "",
-    },
-    {
-      type: "PERSONAL",
-      name: "Record Techno mixtape",
-      place: "Klockwork Studios, Stockholm",
-      time: "2021-06-09T21:30",
-      icon: "music",
-      notification: "",
-    },
-    {
-      type: "PERSONAL",
-      name: "Record Techno mixtape",
-      place: "Klockwork Studios, Stockholm",
-      time: "2021-06-09T23:00",
-      icon: "music",
       hasOthers: true,
       notification: "",
-    },
+    }
   ]);
 
   const setMeetingsDataFunc = () => {
