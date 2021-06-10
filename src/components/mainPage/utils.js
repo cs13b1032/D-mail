@@ -3,18 +3,18 @@ export function getTime(time){
     let timeValue = ""
     if (hm.hours > 12){
         hm.hours = hm.hours - 12
-        hm.timeValue = hm.hours.toString()
+        timeValue = hm.hours.toString()
         if (hm.minutes <= 0){
-            timeValue = hm.timeValue+ "pm"
+            timeValue = timeValue+ "pm"
         }else{
-            timeValue = hm.timeValue + ":" + hm.minutes.toString()+ "pm"
+            timeValue = timeValue + ":" + hm.minutes.toString()+ "pm"
         }
     }else{
         timeValue = hm.hours.toString()
         if (hm.minutes <= 0){
-            timeValue = hm.timeValue+ "am"
+            timeValue = timeValue+ "am"
         }else{
-            timeValue = hm.timeValue + ":" + hm.minutes.toString()+ "am"
+            timeValue = timeValue + ":" + hm.minutes.toString()+ "am"
         }
     }
 
@@ -28,8 +28,8 @@ export function getHoursAndMinutes(time){
     const minutes = Number(splitHours[1])
 
     return {
-        hours: hours,
-        minutes: minutes
+        hours: hours ? hours : 0,
+        minutes: minutes ? minutes : 0
     }
 }
 
