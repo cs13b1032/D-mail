@@ -15,15 +15,24 @@ export const useStyles = makeStyles((theme) => ({
   fab: {
     position: "fixed",
     bottom: theme.spacing(7),
-    right: theme.spacing(2),
+    right: theme.spacing(3.2),
     backgroundColor: "#34baeb",
     zIndex: 100,
-    shadowOpacity: 0.8,
+    height: theme.spacing(7.5),
+    width: theme.spacing(7.5),
+    // shadowOpacity: 0.8,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 1,
+    shadowRadius: 300,
   },
   avatarSmallClass: {
-    width: theme.spacing(2.5),
-    height: theme.spacing(2.5),
-    marginLeft: theme.spacing(-0.5)
+    width: theme.spacing(2.3),
+    height: theme.spacing(2.3),
+    marginLeft: theme.spacing(-0.5),
   },
   avatarMainClass: {
     width: theme.spacing(9.4),
