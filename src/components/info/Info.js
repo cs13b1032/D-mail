@@ -14,18 +14,33 @@ import {
   CircularProgressbarWithChildren,
   buildStyles,
 } from "react-circular-progressbar";
+import { withStyles } from "@material-ui/core/styles";
 
-const ProgressLinear = ({ progress = 20 }) => {
-  const classes = useStyles({ progress });
+// const withStyles = ({ progress = 20 }) => {
+//   const classes = useStyles({ progress });
 
-  return (
-    <LinearProgress
-      classes={{ root: classes.root, bar: classes.bar }}
-      variant="determinate"
-      value={progress}
-    />
-  );
-};
+//   return (
+//     <LinearProgress
+//       classes={{ root: classes.root, bar: classes.bar }}
+//       variant="determinate"
+//       value={progress}
+//     />
+//   );
+// };
+
+const BorderLinearProgress = withStyles((theme) => ({
+  root: {
+    height: 4,
+    // borderRadius: 5,
+  },
+  colorPrimary: {
+    backgroundColor: `linear-gradient(#8091ed, #2ebaee)`,
+  },
+  bar: {
+    // backgroundColor: `linear-gradient(#8091ed, #2ebaee)`,
+    background: `linear-gradient(to right, #8091ed, #2ebaee)`
+  },
+}))(LinearProgress);
 
 export default function Info(props) {
   const classes = useStyles();
@@ -89,7 +104,8 @@ export default function Info(props) {
           </Grid>
         </div>
         <div className={classes.progressBarClass}>
-          <ProgressLinear />
+          {/* <ProgressLinear /> */}
+          <BorderLinearProgress variant="determinate" value={100} />
         </div>
       </div>
     </div>

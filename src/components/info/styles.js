@@ -56,9 +56,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     bar: ({ progress }) => ({
       borderRadius: 5,
-      background: `linear-gradient(90deg, #7e91ed ${
-        100 - progress
-      }%, #23b6ed 100%)`,
+      background: `linear-gradient(#8091ed, #2ebaee)`,
     }),
     percentageClass: {
       display: "inline",
