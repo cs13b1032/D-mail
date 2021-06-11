@@ -9,6 +9,11 @@ import LinearProgress from "@material-ui/core/LinearProgress";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { useStyles } from "./styles";
 import { showDate } from "./utils";
+import {
+  CircularProgressbar,
+  CircularProgressbarWithChildren,
+  buildStyles,
+} from "react-circular-progressbar";
 
 const ProgressLinear = ({ progress = 20 }) => {
   const classes = useStyles({ progress });
@@ -67,6 +72,15 @@ export default function Info(props) {
                   value={props.completedPercentage}
                   className={classes.circularProgressClass}
                 /> */}
+                <CircularProgressbarWithChildren
+                  value={props.completedPercentage}
+                  strokeWidth={10}
+                  className={classes.circularProgressClass}
+                  styles={buildStyles({
+                    pathColor: "#50acf3",
+                    trailColor: "#0e3e6a",
+                  })}
+                ></CircularProgressbarWithChildren>
                 <div className={classes.percentageClass}>
                   {props.completedPercentage}% done
                 </div>

@@ -73,5 +73,7 @@ export const useStyles = makeStyles((theme) => ({
       width: "100%",
       // backgroundColor: `linear-gradient(to right, #111 80%, rgba(0,0,0,5) 50%)`
       // backgroundColor: "rgba(10, 17, 7, 0)",  // for showing the opacity film on background image
+    },
+    inlineClass: {
     }
   }));
