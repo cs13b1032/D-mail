@@ -39,7 +39,7 @@ export const useStyles = makeStyles((theme) => ({
     height: theme.spacing(9.4),
   },
   dividerInset: {
-    margin: `5px 0 0 0`,
+    margin: `0 0 0 0`,
     fontSize: "15px",
   },
   subDividerInset: {
@@ -52,7 +52,7 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "8px",
   },
   listDiv: {
-    alignItems: "center",
+    // alignItems: "center",
     margin: theme.spacing(3, 2, 0),
     maxWidth: "95%",
   },
