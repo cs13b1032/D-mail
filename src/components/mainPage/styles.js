@@ -23,6 +23,7 @@ export const useStyles = makeStyles((theme) => ({
   avatarSmallClass: {
     width: theme.spacing(2.5),
     height: theme.spacing(2.5),
+    marginLeft: theme.spacing(-0.5)
   },
   avatarMainClass: {
     width: theme.spacing(9.4),
@@ -75,10 +76,10 @@ export const useStyles = makeStyles((theme) => ({
   listItemTextClass: {
     width: theme.spacing(8),
     height: theme.spacing(8),
-    margin: theme.spacing(2, 2.5, 0),
+    margin: theme.spacing(2, 1, 0),
   },
   subDividerInset2: {
-    marginLeft: theme.spacing(2),
+    marginLeft: theme.spacing(1.3),
     marginRight: theme.spacing(1),
     fontSize: "12px",
   },
