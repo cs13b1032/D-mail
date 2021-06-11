@@ -25,15 +25,15 @@ export const useStyles = makeStyles((theme) => ({
     height: theme.spacing(2.5),
   },
   avatarMainClass: {
-    width: theme.spacing(8),
-    height: theme.spacing(8),
+    width: theme.spacing(9),
+    height: theme.spacing(9),
   },
   dividerInset: {
-    margin: `5px 0 0 ${theme.spacing(9)}px`,
+    margin: `5px 0 0 0`,
     fontSize: "15px",
   },
   subDividerInset: {
-    marginLeft: `${theme.spacing(2)}px`,
+    marginLeft: theme.spacing(2),
     fontSize: "12px",
   },
   addIcon: {
@@ -60,6 +60,7 @@ export const useStyles = makeStyles((theme) => ({
   meetingTimeClass: {
     fontSize: "15px",
     margin: theme.spacing(0, 1, 0),
+    // float: "right"
   },
   completedClass: {
     margin: theme.spacing(2, 0, 0),
