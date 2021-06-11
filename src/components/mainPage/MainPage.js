@@ -18,6 +18,8 @@ import tie from "../../static/images/avatar/tie.jpg";
 import { useStyles } from "./styles";
 import { getTime, getMeetingsCount, getIsMeetingCompleted } from "./utils";
 import { mappedIconsFunc } from "../icon/utils";
+import oneImg from "../../static/images/avatar/1.jpg"
+import twoImg from "../../static/images/avatar/2.jpg"
 
 export default function AlignItemsList(props) {
   const classes = useStyles();
@@ -130,18 +132,20 @@ export default function AlignItemsList(props) {
                   {getTime(meetingData.time)}
                 </Typography>
                 {meetingData.hasOthers ? (
-                  <AvatarGroup className={classes.avatarGroupClass} max={3}>
-                    <Avatar
-                      alt={meetingData.name}
-                      src="/static/images/avatar/1.jpg"
-                      className={classes.avatarSmallClass}
-                    />
-                    <Avatar
-                      alt={meetingData.name}
-                      src="/static/images/avatar/2.jpg"
-                      className={classes.avatarSmallClass}
-                    />
-                  </AvatarGroup>
+                  <div>
+                    <AvatarGroup className={classes.avatarGroupClass} max={3}>
+                      <Avatar
+                        alt={meetingData.name}
+                        src={oneImg}
+                        className={classes.avatarSmallClass}
+                      />
+                      <Avatar
+                        alt={meetingData.name}
+                        src={twoImg}
+                        className={classes.avatarSmallClass}
+                      />
+                    </AvatarGroup>
+                  </div>
                 ) : (
                   ""
                 )}

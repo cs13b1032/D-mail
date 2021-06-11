@@ -58,6 +58,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   avatarGroupClass: {
     margin: theme.spacing(0, 0, 0),
+    float: "right"
   },
   timeClass: {
     margin: theme.spacing(0, 0, 0),
