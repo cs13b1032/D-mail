@@ -33,7 +33,7 @@ export default function Info(props) {
           <Button>
             <FormatAlignLeftIcon className={classes.formatAlignLeftIconClass} />
           </Button>
-          <Grid container>
+          <Grid container alignItems="center">
             <Grid item xs>
               <Typography
                 gutterBottom
@@ -46,13 +46,13 @@ export default function Info(props) {
 
             <Grid item>
               <Typography gutterBottom className={classes.quantityClass}>
-                <div className={classes.numberClass}>{props.business}</div>
+                {props.business}
                 <div className={classes.textClass}>Personal</div>
               </Typography>
             </Grid>
             <Grid item>
               <Typography gutterBottom className={classes.quantityClass}>
-                <div className={classes.numberClass}>{props.personal}</div>
+                {props.personal}
                 <div className={classes.textClass}>Business</div>
               </Typography>
             </Grid>
@@ -61,14 +61,9 @@ export default function Info(props) {
             <Typography gutterBottom className={classes.dateClass}>
               {currentDate.month} {currentDate.date}, {currentDate.year}
               <div className={classes.percentageClass}>
-                {/* <CircularProgress
-                  size={"15px"}
-                  variant="determinate"
-                  value={props.completedPercentage}
-                  className={classes.circularProgressClass}
-                /> */}
+                <CircularProgress size={"15px"} variant="determinate" value={props.completedPercentage} className={classes.circularProgressClass}/> 
                 <div className={classes.percentageClass}>
-                  {props.completedPercentage}% done
+                {props.completedPercentage}% done
                 </div>
               </div>
             </Typography>

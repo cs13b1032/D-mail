@@ -55,6 +55,31 @@ export default function AlignItemsList(props) {
       icon: "music",
       hasOthers: true,
       notification: "",
+    },
+    {
+      type: "BUSINESS",
+      name: "Final design delivery",
+      place: "Inuse Experience, Gothenburg",
+      time: "2021-06-09T23:57",
+      icon: "sketch",
+      notification: "",
+    },
+    {
+      type: "BUSINESS",
+      name: "Lunch run meeting",
+      place: "Trägdårdsföreningen, Gothenburg",
+      time: "2021-06-09T23:58",
+      icon: "shoe",
+      notification: "",
+    },
+    {
+      type: "PERSONAL",
+      name: "Record Techno mixtape",
+      place: "Klockwork Studios, Stockholm",
+      time: "2021-06-09T23:59",
+      icon: "music",
+      hasOthers: true,
+      notification: "",
     }
   ]);
 
@@ -122,7 +147,7 @@ export default function AlignItemsList(props) {
                 )}
               </Typography>
             </ListItem>
-            <Divider variant="middle" />
+            <Divider className={classes.subDividerInset} />
           </div>
         );
       }

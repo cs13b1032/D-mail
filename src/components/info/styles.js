@@ -4,11 +4,14 @@ import BackgroundImg from "../../static/images/background_images/mountain.png";
 export const useStyles = makeStyles((theme) => ({
     root: {
       width: "100%",
+      // height: "100vh",
       backgroundColor: theme.palette.background.paper,
       backgroundImage: `url(${BackgroundImg})`,
       backgroundPosition: "center",
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
+      top: 0,
+      left: 0
     },
     section1: {
       margin: theme.spacing(0, 2, 0),
@@ -18,7 +21,7 @@ export const useStyles = makeStyles((theme) => ({
       color: "#FFFFFF",
     },
     yourThingsClass: {
-      margin: theme.spacing(0, 3, 0),
+      margin: theme.spacing(2, 3, -2.5),
       width: "10%",
       color: "#FFFFFF",
     },
@@ -44,6 +47,10 @@ export const useStyles = makeStyles((theme) => ({
       height: 15,
       borderRadius: 5,
     },
+    numberClass:{
+      float: "right",
+      marginBottom: theme.spacing(-1.3)
+    },
     progressBarClass: {
       maxWidth: "60%"
     },
@@ -55,7 +62,7 @@ export const useStyles = makeStyles((theme) => ({
     }),
     percentageClass: {
       display: "inline",
-      margin: theme.spacing(-0.5, 0.9, 0),
+      margin: theme.spacing(-0, -0.9, 0),
       float: "right"
     },
     circularProgressClass:{
