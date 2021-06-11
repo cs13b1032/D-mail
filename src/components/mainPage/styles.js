@@ -90,11 +90,11 @@ export const useStyles = makeStyles((theme) => ({
   },
   subDividerInset2: {
     marginLeft: theme.spacing(1.3),
-    marginRight: theme.spacing(1),
+    marginRight: theme.spacing(1.3),
     fontSize: "12px",
   },
   listItemClass2: {
     paddingLeft: theme.spacing(0.55),
-    paddingRight: theme.spacing(2.1),
+    paddingRight: theme.spacing(1.2),
   },
 }));
