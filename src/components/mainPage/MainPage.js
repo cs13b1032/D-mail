@@ -43,7 +43,7 @@ export default function AlignItemsList(props) {
       type: "BUSINESS",
       name: "Lunch run meeting",
       place: "Trägdårdsföreningen, Gothenburg",
-      time: "2021-06-09T04:30",
+      time: "2021-06-09T04:00",
       icon: "shoe",
       notification: "",
     },
@@ -80,7 +80,7 @@ export default function AlignItemsList(props) {
       icon: "music",
       hasOthers: true,
       notification: "",
-    }
+    },
   ]);
 
   const setMeetingsDataFunc = () => {
@@ -103,7 +103,7 @@ export default function AlignItemsList(props) {
       if (!getIsMeetingCompleted(meetingData.time)) {
         meetingsArrayDiv.push(
           <div className={classes.listItemdivClass}>
-            <ListItem>
+            <ListItem className={classes.listItemClass2}>
               <ListItemAvatar>
                 <Avatar
                   alt={meetingData.name}
@@ -147,7 +147,7 @@ export default function AlignItemsList(props) {
                 )}
               </Typography>
             </ListItem>
-            <Divider className={classes.subDividerInset} />
+            <Divider className={classes.subDividerInset2} />
           </div>
         );
       }

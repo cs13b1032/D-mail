@@ -25,8 +25,8 @@ export const useStyles = makeStyles((theme) => ({
     height: theme.spacing(2.5),
   },
   avatarMainClass: {
-    width: theme.spacing(9),
-    height: theme.spacing(9),
+    width: theme.spacing(9.4),
+    height: theme.spacing(9.4),
   },
   dividerInset: {
     margin: `5px 0 0 0`,
@@ -59,22 +59,31 @@ export const useStyles = makeStyles((theme) => ({
   },
   meetingTimeClass: {
     fontSize: "15px",
-    margin: theme.spacing(0, 1, 0),
+    margin: theme.spacing(0, 0, 0),
     // float: "right"
   },
   completedClass: {
     margin: theme.spacing(2, 0, 0),
   },
   badgeClass: {
-    margin: theme.spacing(0,2,0)
+    margin: theme.spacing(0, 2, 0),
   },
   customBadge: {
     backgroundColor: "#999cad",
-    color: "white"
+    color: "white",
   },
   listItemTextClass: {
     width: theme.spacing(8),
     height: theme.spacing(8),
-    margin: theme.spacing(2,2.5,0)
+    margin: theme.spacing(2, 2.5, 0),
+  },
+  subDividerInset2: {
+    marginLeft: theme.spacing(2),
+    marginRight: theme.spacing(1),
+    fontSize: "12px",
+  },
+  listItemClass2: {
+    paddingLeft: theme.spacing(0.55),
+    paddingRight: theme.spacing(2.1),
   },
 }));
