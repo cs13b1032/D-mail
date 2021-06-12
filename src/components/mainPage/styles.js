@@ -75,11 +75,14 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "15px",
     margin: theme.spacing(0, 0, 0),
     // float: "right"
+    color: "#a5a5a5",
     fontFamily: "poppins, sans-serif",
     // fontWeight: 100
   },
   completedClass: {
     margin: theme.spacing(2.25, 0, 0),
+    fontFamily: "mukta, sans-serif",
+    color: "9c9eaf"
   },
   badgeClass: {
     margin: theme.spacing(0, 2.25, 0),
@@ -94,6 +97,14 @@ export const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(2, 1, 0),
     fontFamily: "poppins, sans-serif",
     fontWeight: 100
+  },
+  listItemTextClassSeconday: {
+    width: theme.spacing(8),
+    height: theme.spacing(8),
+    margin: theme.spacing(2, 1, 0),
+    fontFamily: "poppins, sans-serif",
+    fontWeight: 100,
+    color: "#a5a5a5",
   },
   subDividerInset2: {
     marginLeft: theme.spacing(1.3),

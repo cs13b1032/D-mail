@@ -117,7 +117,7 @@ export default function AlignItemsList(props) {
                 className={classes.listItemTextClass}
                 primary={meetingData.name}
                 secondary={
-                  <React.Fragment className={classes.listItemTextClass}>
+                  <React.Fragment className={classes.listItemTextClassSeconday}>
                     {meetingData.place}
                   </React.Fragment>
                 }

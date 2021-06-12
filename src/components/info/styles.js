@@ -102,7 +102,7 @@ export const useStyles = makeStyles((theme) => ({
     zIndex: 100000,
     top: 0,
     left: 0,
-    backgroundColor: "rgba(0,0,0, 0.2)",
+    backgroundColor: "rgba(0,0,0, 0.1)",
     overflowX: "hidden",
     transition: "0.5s",
   }
