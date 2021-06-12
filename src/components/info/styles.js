@@ -101,7 +101,7 @@ export const useStyles = makeStyles((theme) => ({
     // height: "250px",
     width: "40%",
     marginLeft: "60%",
-    position: "fixed",
+    position: "absolute",
     zIndex: 100000,
     top: 0,
     left: 0,
