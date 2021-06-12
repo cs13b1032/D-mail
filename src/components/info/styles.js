@@ -21,7 +21,7 @@ export const useStyles = makeStyles((theme) => ({
       color: "#FFFFFF",
     },
     yourThingsClass: {
-      margin: theme.spacing(2, 3, -2.5),
+      margin: theme.spacing(2, 1.25, -2.5),
       width: "10%",
       color: "#f5f7fb",
     },
@@ -41,7 +41,7 @@ export const useStyles = makeStyles((theme) => ({
       color: "#FFFFFF",
       fontSize: theme.spacing(1.8),
       alignContent: "left",
-      margin: theme.spacing(8, 3, 3),
+      margin: theme.spacing(8, 1.25, 3),
       width: "50%"
     },
     barRoot: {
