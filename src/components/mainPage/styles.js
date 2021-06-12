@@ -44,7 +44,7 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "15px",
   },
   subDividerInset: {
-    marginLeft: theme.spacing(2),
+    marginLeft: theme.spacing(1.3),
     fontSize: "12px",
   },
   addIcon: {

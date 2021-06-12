@@ -19,7 +19,6 @@ export const useStyles = makeStyles((theme) => ({
     formatAlignLeftIconClass: {
       margin: theme.spacing(0, 0, 0),
       color: "#FFFFFF",
-      // width: "110%",
     },
     yourThingsClass: {
       margin: theme.spacing(2, 3, -2.5),
@@ -43,6 +42,7 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: theme.spacing(1.8),
       alignContent: "left",
       margin: theme.spacing(8, 3, 3),
+      width: "50%"
     },
     barRoot: {
       height: 15,
@@ -76,7 +76,7 @@ export const useStyles = makeStyles((theme) => ({
     inlineClass: {
     },
     circualPercentageClass: {
-      display: "inline",
+      display: "flex",
       margin: theme.spacing(-0, -0.9, 0),
       float: "right",
       // color: "#FFFFFF",
