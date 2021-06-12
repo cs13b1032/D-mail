@@ -117,10 +117,15 @@ export default function AlignItemsList(props) {
               <ListItemText
                 className={classes.listItemTextClass}
                 primary={meetingData.name}
+                style={{color: `rgb(87,87,87)`}}
                 secondary={
-                  <React.Fragment className={classes.listItemTextClassSeconday}>
-                    {meetingData.place}
-                  </React.Fragment>
+                  <div className={classes.secondaryTextClass}>
+                    <React.Fragment
+                      className={classes.listItemTextClassSeconday}
+                    >
+                      {meetingData.place}
+                    </React.Fragment>
+                  </div>
                 }
               ></ListItemText>
               <Typography
@@ -209,11 +214,7 @@ export default function AlignItemsList(props) {
         <Fab aria-label="add" className={classes.fab}>
           <Link to="/add-item">
             {/* <AddIcon className={classes.addIcon} /> */}
-            <Avatar
-              alt={"Add"}
-              src={plusImage}
-              className={classes.addIcon}
-            />
+            <Avatar alt={"Add"} src={plusImage} className={classes.addIcon} />
           </Link>
         </Fab>
       </div>

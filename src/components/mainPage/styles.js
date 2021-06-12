@@ -26,7 +26,7 @@ export const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     shadowOpacity: 0,
     shadowRadius: 300,
-    boxShadow: `0px 10px 53px rgba(45, 176, 238, 235)`
+    boxShadow: `0px 10px 33px rgba(45, 176, 238, 235)`
   },
   avatarSmallClass: {
     width: theme.spacing(2.3),
@@ -71,8 +71,9 @@ export const useStyles = makeStyles((theme) => ({
   meetingTimeClass: {
     fontSize: "15px",
     margin: theme.spacing(0, 0, 0),
-    color: "#a5a5a5",
-    fontFamily: "Josefin Sans, sans-serif",  // FONT-1
+    color: `rgba(125,111,111,0.54)`,
+    fontFamily: "'Poppins', sans-serif",
+    // fontFamily: "Josefin Sans, sans-serif",  // FONT-1
   },
   completedClass: {
     margin: theme.spacing(2.25, 0, 0),
@@ -113,4 +114,7 @@ export const useStyles = makeStyles((theme) => ({
   meetingTimeAlignClass: {
     marginBottom: theme.spacing(3),
   },
+  secondaryTextClass: {
+    color: `rgba(125,111,111,0.54)`
+  }
 }));
