@@ -17,13 +17,14 @@ export const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(0, 2, 0),
     },
     formatAlignLeftIconClass: {
-      margin: theme.spacing(2, 2, 0),
+      margin: theme.spacing(0, 0, 0),
       color: "#FFFFFF",
+      // width: "110%",
     },
     yourThingsClass: {
       margin: theme.spacing(2, 3, -2.5),
       width: "10%",
-      color: "#FFFFFF",
+      color: "#f5f7fb",
     },
     quantityClass: {
       color: "#FFFFFF",
@@ -73,5 +74,11 @@ export const useStyles = makeStyles((theme) => ({
       // backgroundColor: "rgba(10, 17, 7, 0)",  // for showing the opacity film on background image
     },
     inlineClass: {
-    }
+    },
+    circualPercentageClass: {
+      display: "inline",
+      margin: theme.spacing(-0, -0.9, 0),
+      float: "right",
+      // color: "#FFFFFF",
+    },
   }));

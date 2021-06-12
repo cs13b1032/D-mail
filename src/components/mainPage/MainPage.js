@@ -116,12 +116,11 @@ export default function AlignItemsList(props) {
               <ListItemText
                 className={classes.listItemTextClass}
                 primary={meetingData.name}
-                secondary={<React.Fragment>{meetingData.place}</React.Fragment>}
+                secondary={<React.Fragment className={classes.listItemTextClass}>{meetingData.place}</React.Fragment>}
               ></ListItemText>
               <Typography
                 className={classes.dividerInset}
                 color="textSecondary"
-                // display="inline"
                 variant="caption"
               >
                 <div>

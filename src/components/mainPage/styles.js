@@ -28,6 +28,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     shadowOpacity: 1,
     shadowRadius: 300,
+    boxShadow: 2
   },
   avatarSmallClass: {
     width: theme.spacing(2.3),
