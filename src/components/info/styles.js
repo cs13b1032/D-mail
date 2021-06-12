@@ -23,7 +23,7 @@ export const useStyles = makeStyles((theme) => ({
   yourThingsClass: {
     margin: theme.spacing(2, 1.25, -2.5),
     width: "10%",
-    color: "#f5f7fb",
+    color: "#e2e7f2",
     fontFamily: "poppins, sans-serif",
     fontWeight: 100,
     fontSize: theme.spacing(5)
@@ -36,7 +36,7 @@ export const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(5, 0.5, 0),
   },
   textClass: {
-    color: "#FFFFFF",
+    color: "#f5f7fbc4",
     fontSize: theme.spacing(1.5),
     marginLeft: theme.spacing(0.5),
   },
