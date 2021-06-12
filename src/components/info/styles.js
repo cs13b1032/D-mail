@@ -108,5 +108,10 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: "rgba(0,0,0, 0.1)",
     overflowX: "hidden",
     transition: "0.5s",
+  },
+  circularProgressClass2:{
+    height: "24px",
+    marginRight: theme.spacing(1.55),
+    marginTop: theme.spacing(-1.15)
   }
 }));
