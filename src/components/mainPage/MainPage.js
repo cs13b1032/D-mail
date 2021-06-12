@@ -116,7 +116,11 @@ export default function AlignItemsList(props) {
               <ListItemText
                 className={classes.listItemTextClass}
                 primary={meetingData.name}
-                secondary={<React.Fragment className={classes.listItemTextClass}>{meetingData.place}</React.Fragment>}
+                secondary={
+                  <React.Fragment className={classes.listItemTextClass}>
+                    {meetingData.place}
+                  </React.Fragment>
+                }
               ></ListItemText>
               <Typography
                 className={classes.dividerInset}
@@ -163,6 +167,7 @@ export default function AlignItemsList(props) {
 
   return (
     <List className={classes.root}>
+      <div className={classes.overlay}></div>
       <Paper elevation={0} className={classes.paperClass}>
         <Info
           className={classes.listItemClass}

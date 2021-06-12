@@ -3,7 +3,6 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-// import FormatAlignLeftIcon from "@material-ui/icons/FormatAlignLeft";
 import Button from "@material-ui/core/Button";
 import LinearProgress from "@material-ui/core/LinearProgress";
 import { useStyles } from "./styles";
@@ -34,10 +33,9 @@ export default function Info(props) {
 
   return (
     <div className={classes.root}>
-      <div className={classes.content}>
+      <div className={classes.overlay}></div>
         <div className={classes.section1}>
           <Button className={classes.backButtonClass}>
-            {/* <FormatAlignLeftIcon className={classes.formatAlignLeftIconClass} /> */}
             <Avatar
               alt={"Back Button"}
               src={backButton}
@@ -68,17 +66,10 @@ export default function Info(props) {
               </Typography>
             </Grid>
           </Grid>
-          {/* <Grid item> */}
           <Typography gutterBottom className={classes.dateClass}>
             {currentDate.month} {currentDate.date}, {currentDate.year}
           </Typography>
           <div className={classes.circualPercentageClass}>
-            {/* <CircularProgress
-                  size={"15px"} 
-                  variant="determinate"
-                  value={props.completedPercentage}
-                  className={classes.circularProgressClass}
-                /> */}
             <CircularProgressbarWithChildren
               value={props.completedPercentage}
               strokeWidth={10}
@@ -92,12 +83,10 @@ export default function Info(props) {
               {props.completedPercentage}% done
             </div>
           </div>
-          {/* </Grid> */}
         </div>
         <div className={classes.progressBarClass}>
           <BorderLinearProgress variant="determinate" value={100} />
         </div>
-      </div>
     </div>
   );
 }

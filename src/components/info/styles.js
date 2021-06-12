@@ -93,5 +93,17 @@ export const useStyles = makeStyles((theme) => ({
   },
   numberTextClass: {
     marginRight: theme.spacing(0.8)
+  },
+  overlay: {
+    height: "32%",
+    width: "40%",
+    marginLeft: "60%",
+    position: "fixed",
+    zIndex: 100000,
+    top: 0,
+    left: 0,
+    backgroundColor: "rgba(0,0,0, 0.2)",
+    overflowX: "hidden",
+    transition: "0.5s",
   }
 }));

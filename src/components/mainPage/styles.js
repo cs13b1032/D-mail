@@ -79,10 +79,10 @@ export const useStyles = makeStyles((theme) => ({
     // fontWeight: 100
   },
   completedClass: {
-    margin: theme.spacing(2, 0, 0),
+    margin: theme.spacing(2.25, 0, 0),
   },
   badgeClass: {
-    margin: theme.spacing(0, 2, 0),
+    margin: theme.spacing(0, 2.25, 0),
   },
   customBadge: {
     backgroundColor: "#999cad",
