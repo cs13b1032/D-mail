@@ -41,7 +41,7 @@ export const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(0.5),
   },
   dateClass: {
-    color: "#FFFFFF",
+    color: "#98a1b7",
     fontSize: theme.spacing(1.8),
     alignContent: "left",
     margin: theme.spacing(6, 1.25, 2.5),
@@ -69,6 +69,8 @@ export const useStyles = makeStyles((theme) => ({
     display: "inline",
     margin: theme.spacing(-0, -0.9, 0),
     float: "right",
+    fontSize: "13px",
+    color: "0c59e8"
   },
   circularProgressClass: {
     height: "24px",
@@ -84,9 +86,9 @@ export const useStyles = makeStyles((theme) => ({
   inlineClass: {},
   circualPercentageClass: {
     display: "flex",
-    margin: theme.spacing(-5.1, 2.1, 0),
+    margin: theme.spacing(-4.8, 2.1, 0),
     float: "right",
-    color: "#FFFFFF",
+    color: "#f5f7fb75",
   },
   backButtonClass: {
     margin: theme.spacing(1, -1, -0.8),
