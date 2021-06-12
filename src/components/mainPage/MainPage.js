@@ -77,7 +77,7 @@ export default function AlignItemsList(props) {
     },
     {
       type: "PERSONAL",
-      name: "Record Techno mixtape",
+      name: "Record techno mixtape",
       place: "Klockwork Studios, Stockholm",
       time: "2021-06-09T23:59",
       icon: "music",

@@ -72,7 +72,7 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "15px",
     margin: theme.spacing(0, 0, 0),
     color: "#a5a5a5",
-    fontFamily: "poppins, sans-serif",
+    fontFamily: "Josefin Sans, sans-serif",  // FONT-1
   },
   completedClass: {
     margin: theme.spacing(2.25, 0, 0),
@@ -90,14 +90,14 @@ export const useStyles = makeStyles((theme) => ({
     width: theme.spacing(8),
     height: theme.spacing(8),
     margin: theme.spacing(2, 1, 0),
-    fontFamily: "Fira Sans, sans-serif",
+    fontFamily: "Josefin Sans, sans-serif",  // FONT-2
     fontWeight: 100,
   },
   listItemTextClassSeconday: {
     width: theme.spacing(8),
     height: theme.spacing(8),
     margin: theme.spacing(2, 1, 0),
-    fontFamily: "poppins, sans-serif",
+    fontFamily: "Josefin Sans, sans-serif",  // FONT-3
     fontWeight: 100,
     color: "#afafaf",
   },

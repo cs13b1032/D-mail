@@ -97,7 +97,8 @@ export const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(0.8)
   },
   overlay: {
-    height: "32%",
+    height: theme.spacing(31.25),
+    // height: "250px",
     width: "40%",
     marginLeft: "60%",
     position: "fixed",
