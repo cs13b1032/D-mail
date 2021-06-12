@@ -89,7 +89,7 @@ export const useStyles = makeStyles((theme) => ({
     color: "#FFFFFF",
   },
   backButtonClass: {
-    margin: theme.spacing(1, -1, 0),
+    margin: theme.spacing(1, -1, -0.8),
   },
   numberTextClass: {
     marginRight: theme.spacing(0.8)
