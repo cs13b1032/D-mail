@@ -6,7 +6,6 @@ import ListItemText from "@material-ui/core/ListItemText";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
 import Fab from "@material-ui/core/Fab";
-import AddIcon from "@material-ui/icons/Add";
 import AvatarGroup from "@material-ui/lab/AvatarGroup";
 import Typography from "@material-ui/core/Typography";
 import { Link } from "react-router-dom";
@@ -213,7 +212,6 @@ export default function AlignItemsList(props) {
 
         <Fab aria-label="add" className={classes.fab}>
           <Link to="/add-item">
-            {/* <AddIcon className={classes.addIcon} /> */}
             <Avatar alt={"Add"} src={plusImage} className={classes.addIcon} />
           </Link>
         </Fab>
