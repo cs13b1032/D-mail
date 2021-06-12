@@ -23,10 +23,9 @@ export const useStyles = makeStyles((theme) => ({
       width: 100,
       height: 100,
     },
-    shadowOpacity: 1,
+    alignItems: "center",
+    shadowOpacity: 0,
     shadowRadius: 300,
-    elevation: 24,
-    borderRadius: "45px",
     boxShadow: `0px 10px 53px rgba(45, 176, 238, 235)`
   },
   avatarSmallClass: {
@@ -51,7 +50,8 @@ export const useStyles = makeStyles((theme) => ({
   addIcon: {
     color: "#FFFFFF",
     fontSize: "35px",
-    marginTop: "8px",
+    marginTop: "5px",
+    marginLeft: "5px"
   },
   listDiv: {
     margin: theme.spacing(3, 2, 0),
@@ -99,7 +99,7 @@ export const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(2, 1, 0),
     fontFamily: "poppins, sans-serif",
     fontWeight: 100,
-    color: "#a5a5a5",
+    color: "#afafaf",
   },
   subDividerInset2: {
     marginLeft: theme.spacing(1.3),

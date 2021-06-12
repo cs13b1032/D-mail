@@ -20,6 +20,7 @@ import { getTime, getMeetingsCount, getIsMeetingCompleted } from "./utils";
 import { mappedIconsFunc } from "../icon/utils";
 import oneImg from "../../static/images/avatar/1.jpg";
 import twoImg from "../../static/images/avatar/2.jpg";
+import plusImage from "../../static/images/avatar/plus.jpg";
 
 export default function AlignItemsList(props) {
   const classes = useStyles();
@@ -207,7 +208,12 @@ export default function AlignItemsList(props) {
 
         <Fab aria-label="add" className={classes.fab}>
           <Link to="/add-item">
-            <AddIcon className={classes.addIcon} />
+            {/* <AddIcon className={classes.addIcon} /> */}
+            <Avatar
+              alt={"Add"}
+              src={plusImage}
+              className={classes.addIcon}
+            />
           </Link>
         </Fab>
       </div>
