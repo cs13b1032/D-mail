@@ -46,6 +46,8 @@ export const useStyles = makeStyles((theme) => ({
   subDividerInset: {
     marginLeft: theme.spacing(1.25),
     fontSize: "12px",
+    fontFamily: "poppins, sans-serif",
+    fontWeight: 500
   },
   addIcon: {
     color: "#FFFFFF",
@@ -73,6 +75,8 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "15px",
     margin: theme.spacing(0, 0, 0),
     // float: "right"
+    fontFamily: "poppins, sans-serif",
+    // fontWeight: 100
   },
   completedClass: {
     margin: theme.spacing(2, 0, 0),
@@ -88,6 +92,8 @@ export const useStyles = makeStyles((theme) => ({
     width: theme.spacing(8),
     height: theme.spacing(8),
     margin: theme.spacing(2, 1, 0),
+    fontFamily: "poppins, sans-serif",
+    fontWeight: 100
   },
   subDividerInset2: {
     marginLeft: theme.spacing(1.3),

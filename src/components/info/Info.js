@@ -36,7 +36,7 @@ export default function Info(props) {
     <div className={classes.root}>
       <div className={classes.content}>
         <div className={classes.section1}>
-          <Button>
+          <Button className={classes.backButtonClass}>
             {/* <FormatAlignLeftIcon className={classes.formatAlignLeftIconClass} /> */}
             <Avatar
               alt={"Back Button"}
@@ -55,13 +55,13 @@ export default function Info(props) {
               </Typography>
             </Grid>
 
-            <Grid item>
+            <Grid item className={classes.numberTextClass}>
               <Typography gutterBottom className={classes.quantityClass}>
                 <div className={classes.numberClass}>{props.business}</div>
                 <div className={classes.textClass}>Personal</div>
               </Typography>
             </Grid>
-            <Grid item>
+            <Grid item className={classes.numberTextClass}>
               <Typography gutterBottom className={classes.quantityClass}>
                 <div className={classes.numberClass}>{props.personal}</div>
                 <div className={classes.textClass}>Business</div>
