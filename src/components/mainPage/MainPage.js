@@ -123,7 +123,7 @@ export default function AlignItemsList(props) {
                 color="textSecondary"
                 variant="caption"
               >
-                <div>
+                <div className={classes.meetingTimeAlignClass}>
                   <Typography
                     className={classes.meetingTimeClass}
                     color="textSecondary"

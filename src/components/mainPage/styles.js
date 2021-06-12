@@ -104,4 +104,7 @@ export const useStyles = makeStyles((theme) => ({
     paddingLeft: theme.spacing(0.55),
     paddingRight: theme.spacing(1.2),
   },
+  meetingTimeAlignClass: {
+    marginBottom : theme.spacing(3)
+  }
 }));
