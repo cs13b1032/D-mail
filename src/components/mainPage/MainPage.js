@@ -116,7 +116,7 @@ export default function AlignItemsList(props) {
               <ListItemText
                 className={classes.listItemTextClass}
                 primary={meetingData.name}
-                style={{color: `rgb(87,87,87)`}}
+                style={{color: `rgb(87,87,87)`, fontFamily: "'Questrial', sans-serif",}}
                 secondary={
                   <div className={classes.secondaryTextClass}>
                     <React.Fragment

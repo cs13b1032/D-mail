@@ -72,7 +72,7 @@ export const useStyles = makeStyles((theme) => ({
     fontSize: "15px",
     margin: theme.spacing(0, 0, 0),
     color: `rgba(125,111,111,0.54)`,
-    fontFamily: "'Poppins', sans-serif",
+    fontFamily: "'Questrial', sans-serif",
     // fontFamily: "Josefin Sans, sans-serif",  // FONT-1
   },
   completedClass: {
@@ -91,14 +91,14 @@ export const useStyles = makeStyles((theme) => ({
     width: theme.spacing(8),
     height: theme.spacing(8),
     margin: theme.spacing(2, 1, 0),
-    fontFamily: "Josefin Sans, sans-serif",  // FONT-2
+    fontFamily: "'Questrial', sans-serif",  // FONT-2
     fontWeight: 100,
   },
   listItemTextClassSeconday: {
     width: theme.spacing(8),
     height: theme.spacing(8),
     margin: theme.spacing(2, 1, 0),
-    fontFamily: "Josefin Sans, sans-serif",  // FONT-3
+    fontFamily: "'Questrial', sans-serif",  // FONT-3
     fontWeight: 100,
     color: "#afafaf",
   },
